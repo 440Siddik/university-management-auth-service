@@ -11,9 +11,9 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
 app.get('/', (req: Request, res: Response) => {
-  res.send('Server is running')
+  res.send("Working Successfully")
 })
 
-app.use("/api/v1/" , userRoutes)
+app.use('/api/v1/users', userRoutes)
 
 export default app
