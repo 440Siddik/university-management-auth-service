@@ -3,8 +3,6 @@ import app from "./app";
 import config from "./config/index";
 
 
-
-
 async function bootstrap() {
   try {
     await mongoose.connect(config.database_url as string);
